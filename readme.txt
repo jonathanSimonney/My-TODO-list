@@ -1,3 +1,6 @@
+
+don't interpret html markup in user input
+
 Give div.column the appearance of column.
 
 Make the user can add box by clicking on add a box.
