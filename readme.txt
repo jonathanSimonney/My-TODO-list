@@ -9,6 +9,6 @@ Drag and drop system for boxes
 add class so boxes appear in full screen when clicked
 (with all of their fuctionalities, that is, change name, field with content, etc.)
 
-forbid creation of column without name?
+give cursor a pointer appearance on hover of elements that can be clicked (e.g the title)
 
 
