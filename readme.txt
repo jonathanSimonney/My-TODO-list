@@ -14,4 +14,4 @@ add class so boxes appear in full screen when clicked
 
 give cursor a pointer appearance on hover of elements that can be clicked (e.g the title)
 
-
+make user can suppress boxes.
