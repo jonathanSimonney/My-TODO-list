@@ -1,5 +1,3 @@
-Allow user to close their form without modification.
-
 open the box in full screen upon creation, with focus on the name with the rename form opened.
 
 Drag and drop system for boxes
