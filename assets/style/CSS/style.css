@@ -1,4 +1,4 @@
-.box{
+.card{
   height:70px;
   background-color: red;
   border: solid 1px green;
@@ -14,7 +14,15 @@
   z-index: 100;
 }
 
-#closeButton{
+.onlyFullScreen{
+    display: none;
+}
+
+.fullScreen .onlyFullScreen{
+    display: block;
+}
+
+.closeButton{
   background-color: red;
   color: white;
   position: absolute;
