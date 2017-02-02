@@ -2,6 +2,8 @@ open the box in full screen upon creation, with focus on the name with the renam
 
 Drag and drop system for boxes
 
+make animation when opening the modal?
+
 add class so boxes appear in full screen when clicked
 (with all of their functionalities, that is, change name, field with content, etc.)
 
