@@ -71,4 +71,8 @@ body {
 .hidden{
   display: none;
 }
+
+.hasDescription{
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */
