@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+input[type='button'] {
+  color: red;
+  transition-duration: 0.4s;
+  padding: 2px 5px 2px 5px;
+  border: 2px solid red;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 7px; }
+  input[type='button']:hover {
+    background-color: red;
+    color: white; }
+
+textarea {
+  padding: 5px 10px 5px 10px;
+  width: 200px;
+  color: seashell;
+  border-radius: 7px;
+  border: 0;
+  background-color: #646464; }
+  textarea:hover, textarea:focus {
+    background-color: white;
+    transition-duration: 0.4s;
+    color: black; }
+  textarea::placeholder {
+    color: black;
+    text-align: center; }
+
+body {
+  background: url(background.png) fixed repeat;
+  background-size: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0; }
+
+.column {
+  width: 220px;
+  height: 500px;
+  float: left;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  margin: 20px 3px 0 3px;
+  overflow: scroll; }
+
+.shelf {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%; }
+
+h3 {
+  margin-top: 5px;
+  text-align: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  border-shadow: #ffffff 5px 5px, #ffffff -5px 5px, #ffffff -5px -5px, #ffffff 5px -5px; }
+  h3, h3 #closeButton {
+    cursor: pointer; }
+
+.modificationForm {
+  cursor: text;
+  position: relative;
+  top: 0; }
+
+#newContent {
+  width: 90%; }
+
+@font-face {
+  font-family: 'Xfiles';
+  src: url("Xfiles.ttf"); }
+.closeButton {
+  color: white;
+  font-family: 'Xfiles';
+  font-size: 25px;
+  cursor: pointer; }
+
+.card {
+  background-color: teal;
+  border: 1.5px solid black;
+  height: 100px;
+  margin: 2px 2px 2px 2px;
+  cursor: pointer; }
+
+.positioned {
+  position: relative; }
+
+.modale {
+  background-color: #ed686b;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border: none;
+  text-align: center;
+  border: 1px solid #891214; }
+  .modale textarea {
+    width: 50%; }
+  .modale .title:first-child {
+    margin-top: 100px; }
+
+.containerCard {
+  overflow-y: scroll;
+  height: 400px; }
+
+.placeholder {
+  color: gold; }
