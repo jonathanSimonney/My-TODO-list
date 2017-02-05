@@ -1,5 +1,7 @@
+
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 input[type='button'] {
+
   color: red;
   transition-duration: 0.4s;
   padding: 2px 5px 2px 5px;
@@ -12,11 +14,14 @@ input[type='button'] {
     background-color: red;
     color: white; }
 
+
+
 textarea {
   padding: 5px 10px 5px 10px;
   width: 200px;
   color: seashell;
   border-radius: 7px;
+
   border: 0;
   background-color: #646464; }
   textarea:hover, textarea:focus {
@@ -118,4 +123,12 @@ h3 {
 .placeholder {
   color: gold; }
 
+
+.hidden{
+  display: none;
+}
+
+.hasDescription{
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */
