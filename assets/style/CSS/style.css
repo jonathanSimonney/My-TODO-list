@@ -52,7 +52,7 @@ body {
   border-left: 1.5px solid black;
   border-right: 1.5px solid black;
   margin: 20px 3px 0 3px;
-  overflow: scroll; }
+  overflow: auto; }
 
 .shelf {
   display: flex;
@@ -117,7 +117,7 @@ h3 {
     margin-top: 100px; }
 
 .containerCard {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 400px; }
 
 .placeholder {
@@ -130,9 +130,5 @@ h3 {
 
 .hasDescription{
   background-color: blue;
-}
-
-.drop-leave{
-  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
