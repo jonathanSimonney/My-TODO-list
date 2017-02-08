@@ -9,3 +9,5 @@ make user can suppress boxes and column.
 Give good names to files (e.g background.png for background picture)
 
 Before giving back, check all TODO!!!
+
+test
