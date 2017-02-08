@@ -1,7 +1,3 @@
-open the box in full screen upon creation, with focus on the name with the rename form opened.
-
-Drag and drop system for boxes
-
 make animation when opening the modal?
 
 //TODO add picture showing if card has description or no.
