@@ -18,23 +18,23 @@ textarea {
   color: seashell;
   border-radius: 7px;
   border: 0;
-  background-color: #646464; }
+  background-color: #1e1e1e; }
   textarea:hover, textarea:focus {
     background-color: white;
     transition-duration: 0.4s;
     color: black; }
   textarea::placeholder {
-    color: black;
+    color: white;
     text-align: center; }
 
 body {
-  background: url(background.png) fixed repeat;
+  background: url(../../images/background.png) fixed repeat;
   background-size: 110%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 0 0; }
+  margin: 0; }
 
 .column {
   width: 220px;
@@ -53,18 +53,17 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%; }
+  width: 89.5%; }
 
 h3 {
   margin-top: 5px;
-  text-align: center;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
   overflow-wrap: break-word;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  border-shadow: #ffffff 5px 5px, #ffffff -5px 5px, #ffffff -5px -5px, #ffffff 5px -5px; }
+  border-shadow: #ffffff 5px 5px, #ffffff -5px 5px, #ffffff -5px -5px, #ffffff 5px -5px;
+  max-height: 50px;
+  overflow: scroll;
+  padding: 0 5px 0 5px; }
   h3, h3 #closeButton {
     cursor: pointer; }
 
@@ -74,29 +73,66 @@ h3 {
   top: 0; }
 
 #newContent {
-  width: 90%; }
+  width: 75%;
+  padding-right: 30px;
+  resize: vertical; }
+
+.validateButton {
+  position: absolute;
+  right: 4px;
+  bottom: 12px; }
+  .validateButton button {
+    border: 0;
+    border-radius: 7px;
+    background-color: white;
+    color: black; }
+    .validateButton button:hover {
+      background-color: black;
+      color: white; }
 
 @font-face {
-  font-family: 'Xfiles';
-  src: url("Xfiles.ttf"); }
+  font-family: 'X-font';
+  src: url("X-font.ttf"); }
 .closeButton {
   color: white;
-  font-family: 'Xfiles';
-  font-size: 25px;
-  cursor: pointer; }
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'X-font';
+  top: 0;
+  right: 0;
+  padding: 10px 10px 0 0; }
+  .closeButton:hover {
+    color: silver; }
 
 .card {
-  background-color: teal;
+  background: linear-gradient(rgba(27, 123, 178, 0.8), rgba(27, 123, 178, 0.8)), url(../../images/card.png);
+  opacity: 0.82;
   border: 1.5px solid black;
+  border-radius: 15px;
   height: 100px;
   margin: 2px 2px 2px 2px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  overflow-wrap: break-word;
+  z-index: 1;
+  overflow: scroll; }
+  .card h2 {
+    padding: 0 5px 0 5px; }
+
+.drop-over {
+  background: linear-gradient(rgba(35, 63, 225, 0.8), rgba(35, 63, 225, 0.8)), url(../../images/card.png);
+  z-index: 2; }
+
+.hasDescription {
+  background: linear-gradient(rgba(64, 60, 247, 0.8), rgba(64, 60, 247, 0.8)) url(../../images/card.png); }
 
 .positioned {
   position: relative; }
 
 .modale {
-  background-color: #ed686b;
+  background-color: rgba(237, 104, 107, 0.9);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -104,16 +140,94 @@ h3 {
   left: 0;
   z-index: 100;
   border: none;
-  text-align: center;
-  border: 1px solid #891214; }
-  .modale textarea {
-    width: 50%; }
+  border: 1px solid #891214;
+  font-family: 'Roboto', sans-serif; }
   .modale .title:first-child {
-    margin-top: 100px; }
+    margin-top: 50px; }
+  .modale .title {
+    margin-left: 30px;
+    padding: 0; }
+    .modale .title, .modale .title .modale .closeButton {
+      cursor: pointer;
+      overflow-wrap: break-word;
+      margin-right: 50px;
+      max-height: 75px;
+      overflow: scroll; }
+  .modale .cardDescription {
+    border: 2px solid black;
+    margin-left: 30px;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    margin-right: 50px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow: scroll;
+    padding: 5px; }
+  .modale .validateButton {
+    position: initial;
+    right: auto;
+    bottom: auto; }
+  .modale #newContent {
+    width: 94%;
+    resize: vertical; }
 
 .containerCard {
   overflow-y: scroll;
   height: 400px; }
 
 .placeholder {
-  color: gold; }
+  color: white; }
+  .placeholder:hover {
+    color: silver; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+
+.bin {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  content: attr("hello"); }
+  .bin:hover {
+    color: silver; }
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .shelf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center; } }
+@media only screen and (min-width: 351px) and (max-width: 480px) {
+  body {
+    background: url(../../images/background.png) fixed;
+    background-size: 330%;
+    background-position: center; }
+
+  .shelf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .modale #newContent {
+    width: 77.5%; } }
+@media only screen and (max-width: 350px) {
+  .bin {
+    right: 17px; }
+
+  .modale .cardDescription {
+    min-height: 300px;
+    max-height: 300px; }
+
+  body {
+    background: url(../../images/background.png) fixed repeat center;
+    background-size: 340%; }
+
+  .shelf {
+    margin-left: 30px; }
+
+  .modale #newContent {
+    width: 77.5%; } }
